@@ -2,11 +2,13 @@ import cv2
 import numpy as np
 import os
 
+""Inference""
+
 recognizer = cv2.face.LBPHFaceRecognizer_create()
+# Upload model
 recognizer.read('training9.yml')
 
 face_cascade_Path = "haarcascade_frontalface_default.xml"
-
 
 faceCascade = cv2.CascadeClassifier(face_cascade_Path)
 
